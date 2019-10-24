@@ -2,6 +2,7 @@
   "name": "rpg",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://divisioncat.github.io/RPG/",
   "dependencies": {
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
@@ -9,8 +10,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && mv build docs",
+    "build": "react-scripts build",
     "test": "react-scripts test",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
