@@ -1,5 +1,10 @@
 import React from "react";
 import "./App.css";
+//import { FacebookShareButton } from 'react-share';  - FB Share Test
+import { KaKaoTalkButton } from 'react-social-kr';
+//props Error! => we should consider this
+
+
 
 // [1948, 345, 345, 234, 234,5 34, 634]
 // [true, null, null, true, true]
@@ -82,6 +87,7 @@ const sauce = [
   "스모크 바비큐"
 ];
 
+
 const randomVege = () => {
   const how_many_vege = [0, 1, 2, 3].randomItem();
   const behavior = ["넣어주세요", "빼주세요"].randomItem();
@@ -98,10 +104,12 @@ const randomSauce = () => {
   return sauce.randomItem(how_many_sauce).join(", ");
 };
 
+
 function App() {
   return (
     <div className="App">
       <section className="Page">
+        <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
         <header>시작화면</header>
         <footer
           style={{
@@ -146,7 +154,9 @@ function App() {
           </table>
         </main>
         <footer style={{ textAlign: "center" }}>
+          <KaKaoTalkButton pathname={"http://www.naver.com"}>
           <button>공유하기</button>
+          </KaKaoTalkButton>
         </footer>
       </section>
     </div>

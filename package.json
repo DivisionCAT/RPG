@@ -4,9 +4,13 @@
   "private": true,
   "homepage": "https://divisioncat.github.io/RPG/",
   "dependencies": {
+    "create-react-class": "^15.6.3",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
-    "react-scripts": "3.2.0"
+    "react-native-kakao-links": "^1.0.4",
+    "react-scripts": "3.2.0",
+    "react-share": "^3.0.1",
+    "react-social-kr": "^1.1.9"
   },
   "scripts": {
     "start": "react-scripts start",
